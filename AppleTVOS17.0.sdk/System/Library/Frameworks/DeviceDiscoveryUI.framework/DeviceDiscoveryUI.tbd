@@ -1,0 +1,31 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ arm64-tvos, arm64e-tvos ]
+install-name:    '/System/Library/Frameworks/DeviceDiscoveryUI.framework/DeviceDiscoveryUI'
+swift-abi-version: 7
+exports:
+  - targets:         [ arm64-tvos, arm64e-tvos ]
+    symbols:         [ '_$s17DeviceDiscoveryUI0A21PickerSupportedActionV14callAsFunction_10parametersSb7Network9NWBrowserC10DescriptorO_AF12NWParametersCycSgtF', 
+                       '_$s17DeviceDiscoveryUI0A21PickerSupportedActionVMa', '_$s17DeviceDiscoveryUI0A21PickerSupportedActionVMn', 
+                       '_$s17DeviceDiscoveryUI0A21PickerSupportedActionVN', '_$s17DeviceDiscoveryUI0A6PickerV4bodyQrvg', 
+                       '_$s17DeviceDiscoveryUI0A6PickerV4bodyQrvpMV', '_$s17DeviceDiscoveryUI0A6PickerV4bodyQrvpQOMQ', 
+                       '_$s17DeviceDiscoveryUI0A6PickerVMa', '_$s17DeviceDiscoveryUI0A6PickerVMn', 
+                       '_$s17DeviceDiscoveryUI0A6PickerV_8onSelect5label8fallback10parametersACyxq_G7Network9NWBrowserC10DescriptorO_yAI10NWEndpointOcxyXEq_yXEAI12NWParametersCycSgtcfC', 
+                       '_$s17DeviceDiscoveryUI0A6PickerVyxq_G05SwiftC04ViewAAMc', 
+                       '_$s7SwiftUI17EnvironmentValuesV015DeviceDiscoveryB0E20devicePickerSupportsAD0eH15SupportedActionVvg', 
+                       '_$s7SwiftUI17EnvironmentValuesV015DeviceDiscoveryB0E20devicePickerSupportsAD0eH15SupportedActionVvpMV', 
+                       '_$sSo28DDDevicePickerViewControllerC17DeviceDiscoveryUIE11isSupported_5usingSb7Network9NWBrowserC10DescriptorO_AF12NWParametersCSgtFZ', 
+                       '_$sSo28DDDevicePickerViewControllerC17DeviceDiscoveryUIE16browseDescriptor10parametersABSg7Network9NWBrowserC0I0O_AG12NWParametersCSgtcfC', 
+                       '_$sSo28DDDevicePickerViewControllerC17DeviceDiscoveryUIE16browseDescriptor10parametersABSg7Network9NWBrowserC0I0O_AG12NWParametersCSgtcfc', 
+                       '_$sSo28DDDevicePickerViewControllerC17DeviceDiscoveryUIE8endpoint7Network10NWEndpointOvg', 
+                       '_$sSo28DDDevicePickerViewControllerC17DeviceDiscoveryUIE8endpoint7Network10NWEndpointOvgTu', 
+                       '_$sSo28DDDevicePickerViewControllerC17DeviceDiscoveryUIE8endpoint7Network10NWEndpointOvpMV', 
+                       _UISceneSessionRoleEndpointPicker, _UISceneSessionRolePeoplePicker ]
+    objc-classes:    [ DDDevicePickerDebugErrorAction, DDDevicePickerDismissSceneAction, 
+                       DDDevicePickerMutableSceneClientSettings, DDDevicePickerMutableSceneSettings, 
+                       DDDevicePickerSceneClientSettings, DDDevicePickerSceneSettings, 
+                       DDDevicePickerViewController, DDPeoplePickerMutableSceneClientSettings, 
+                       DDPeoplePickerMutableSceneSettings, DDPeoplePickerSceneClientSettings, 
+                       DDPeoplePickerSceneSettings, DDPeoplePickerViewController, 
+                       DDUIHostViewController, DDUIPeopleHostViewController ]
+...

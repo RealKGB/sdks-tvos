@@ -1,0 +1,11 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ arm64-tvos, arm64e-tvos ]
+install-name:    '/System/Library/Frameworks/DataDetection.framework/DataDetection'
+current-version: 750
+exports:
+  - targets:         [ arm64-tvos, arm64e-tvos ]
+    objc-classes:    [ DDMatch, DDMatchCalendarEvent, DDMatchEmailAddress, DDMatchFlightNumber, 
+                       DDMatchLink, DDMatchMoneyAmount, DDMatchPhoneNumber, DDMatchPostalAddress, 
+                       DDMatchShipmentTrackingNumber ]
+...

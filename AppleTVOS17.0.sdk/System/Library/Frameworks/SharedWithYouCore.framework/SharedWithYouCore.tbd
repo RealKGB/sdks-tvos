@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ arm64-tvos, arm64e-tvos ]
+install-name:    '/System/Library/Frameworks/SharedWithYouCore.framework/SharedWithYouCore'
+swift-abi-version: 7
+exports:
+  - targets:         [ arm64-tvos, arm64e-tvos ]
+    symbols:         [ _SWCollaborationClearNoticeTransmissionMessageReadFrom, _SWCollaborationNoticeTransmissionMessageReadFrom, 
+                       _SWContextMenuIdentifier, _SWCoreFrameworkBundle, _SWFrameworkBundle, 
+                       _SWFrameworkLogHandle, _SWGeneralTelemetryLogHandle, _SWHideContextMenuIdentifier, 
+                       _SWIsRunningInWolfClient, _SWMobileSMSBundleIdentifier, _SWReplyContextMenuIdentifier, 
+                       _SWShareableContentLogHandle, _SharedWithYouCoreVersionNumber, 
+                       _SharedWithYouCoreVersionString, __SWActionResponseErrorDomain ]
+    objc-classes:    [ SWCollaborationClearNoticeTransmissionMessage, SWCollaborationNoticeTransmissionMessage, 
+                       _SWActionResponse, _SWCollaborationMetadata ]
+...

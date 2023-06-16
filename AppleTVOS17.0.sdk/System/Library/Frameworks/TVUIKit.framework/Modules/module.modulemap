@@ -1,0 +1,6 @@
+framework module TVUIKit {
+  umbrella header "TVUIKit.h"
+  export *
+
+  module * { export * }
+}

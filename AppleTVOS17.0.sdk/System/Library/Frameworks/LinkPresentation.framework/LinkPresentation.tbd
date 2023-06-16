@@ -1,0 +1,47 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ arm64-tvos, arm64e-tvos ]
+install-name:    '/System/Library/Frameworks/LinkPresentation.framework/LinkPresentation'
+current-version: 230
+exports:
+  - targets:         [ arm64-tvos, arm64e-tvos ]
+    symbols:         [ _LPErrorDomain, _LPLinkMetadataTypeIdentifier, _LPLogChannelFetching, 
+                       _LPLogChannelPlugin, _LPLogChannelSerialization, _LPLogChannelSnapshotGenerator, 
+                       _LPLogChannelTranscoding, _LPLogChannelUI, _LPLogChannelVideo, 
+                       _nameForSizeClass, _nameForStyle, _performForEachSizeClass, 
+                       _performForEachStyle ]
+    objc-classes:    [ LPARAsset, LPARAssetAttachmentSubstitute, LPARAssetMetadata, 
+                       LPARAssetProperties, LPAppLinkPresentationProperties, LPAppStoreStoryMetadata, 
+                       LPAppearanceDependentValue, LPAppleMusicTVShowMetadata, LPAppleNewsMetadata, 
+                       LPApplePhotosMomentMetadata, LPApplePhotosSharedLibraryInvitationMetadata, 
+                       LPApplePhotosStatusMetadata, LPAppleTVMetadata, LPArtworkMetadata, 
+                       LPAudio, LPAudioMetadata, LPAudioProperties, LPBusinessChatMetadata, 
+                       LPButtonAction, LPCaptionBarPresentationProperties, LPCaptionButtonCollapsedPresentationProperties, 
+                       LPCaptionButtonPresentationProperties, LPCaptionPresentationProperties, 
+                       LPCaptionRowPresentationProperties, LPEvent, LPEventTimeline, 
+                       LPFaceTimeInviteMetadata, LPFileMetadata, LPGameCenterInvitationMetadata, 
+                       LPIconMetadata, LPImage, LPImageAttachmentSubstitute, LPImageMetadata, 
+                       LPImagePresentationProperties, LPImageProperties, LPInlineMediaPlaybackInformation, 
+                       LPLinkMetadata, LPLinkMetadataObserver, LPLinkMetadataPresentationTransformer, 
+                       LPLinkMetadataPreviewTransformer, LPLinkMetadataSharedWithYouTransformer, 
+                       LPLinkMetadataStatusTransformer, LPLinkMetadataStoreTransformer, 
+                       LPLinkRendererSizeClassParameters, LPLinkSnapshotGeneratorServiceDelegate, 
+                       LPLinkView, LPLyricExcerptMetadata, LPMIMETypeRegistry, LPMapCollectionMetadata, 
+                       LPMapCollectionPublisherMetadata, LPMapMetadata, LPMessagesPayload, 
+                       LPMultipleMetadataPresentationTransformer, LPPresentationSpecializations, 
+                       LPSharePlayInviteMetadata, LPSharedObjectMetadata, LPSharingMetadataWrapper, 
+                       LPSharingStatusMetadata, LPSourceApplicationMetadata, LPSpecializationMetadata, 
+                       LPStocksMetadata, LPSummarizedLinkMetadata, LPTestingOverrides, 
+                       LPTheme, LPVideo, LPVideoAttachmentSubstitute, LPVideoMetadata, 
+                       LPVideoProperties, LPVisualMedia, LPVisualMediaProperties, 
+                       LPWalletPassMetadata, LPWebLinkPresentationProperties, LPYouTubeURLComponents, 
+                       LPiCloudFamilyInvitationMetadata, LPiCloudSharingMetadata, 
+                       LPiTunesMediaAlbumMetadata, LPiTunesMediaArtistMetadata, LPiTunesMediaAudioBookMetadata, 
+                       LPiTunesMediaBookMetadata, LPiTunesMediaMovieBundleMetadata, 
+                       LPiTunesMediaMovieMetadata, LPiTunesMediaMusicVideoMetadata, 
+                       LPiTunesMediaPlaylistMetadata, LPiTunesMediaPodcastEpisodeMetadata, 
+                       LPiTunesMediaPodcastMetadata, LPiTunesMediaRadioMetadata, 
+                       LPiTunesMediaSoftwareMetadata, LPiTunesMediaSongMetadata, 
+                       LPiTunesMediaTVEpisodeMetadata, LPiTunesMediaTVSeasonMetadata, 
+                       LPiTunesUserProfileMetadata ]
+...

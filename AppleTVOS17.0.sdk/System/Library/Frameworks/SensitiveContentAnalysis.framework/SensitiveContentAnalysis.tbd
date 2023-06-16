@@ -1,0 +1,11 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ arm64-tvos, arm64e-tvos ]
+install-name:    '/System/Library/Frameworks/SensitiveContentAnalysis.framework/SensitiveContentAnalysis'
+exports:
+  - targets:         [ arm64-tvos, arm64e-tvos ]
+    symbols:         [ _SCError, _SCErrorCausedBy, _SCErrorDomain, _SensitiveContentAnalysisVersionNumber, 
+                       _SensitiveContentAnalysisVersionString, _kSCLogSubsystem, 
+                       _kSCServiceEntitlement ]
+    objc-classes:    [ SCEntitlements, SCLog, SCMediaAnalysisService ]
+...

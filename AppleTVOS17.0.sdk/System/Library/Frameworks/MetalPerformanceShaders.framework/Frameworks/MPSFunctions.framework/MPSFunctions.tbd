@@ -1,0 +1,12 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ arm64-tvos, arm64e-tvos ]
+install-name:    '/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSFunctions.framework/MPSFunctions'
+current-version: 127.0.11
+allowable-clients:
+  - targets:         [ arm64-tvos, arm64e-tvos ]
+    clients:         [ MPSImage, MetalPerformanceShaders ]
+exports:
+  - targets:         [ arm64-tvos, arm64e-tvos ]
+    objc-classes:    [ MPSFColorConversion, MPSFunction ]
+...

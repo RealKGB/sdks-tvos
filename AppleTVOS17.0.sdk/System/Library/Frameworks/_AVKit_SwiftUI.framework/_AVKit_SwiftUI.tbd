@@ -1,0 +1,14 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ arm64-tvos, arm64e-tvos ]
+install-name:    '/System/Library/Frameworks/_AVKit_SwiftUI.framework/_AVKit_SwiftUI'
+swift-abi-version: 7
+exports:
+  - targets:         [ arm64-tvos, arm64e-tvos ]
+    symbols:         [ '_$s14_AVKit_SwiftUI11VideoPlayerV4bodyQrvg', '_$s14_AVKit_SwiftUI11VideoPlayerV4bodyQrvpMV', 
+                       '_$s14_AVKit_SwiftUI11VideoPlayerV4bodyQrvpQOMQ', '_$s14_AVKit_SwiftUI11VideoPlayerV6player12videoOverlayACyxGSo8AVPlayerCSg_xyXEtcfC', 
+                       '_$s14_AVKit_SwiftUI11VideoPlayerVAA0bC09EmptyViewVRszrlE6playerACyAFGSo8AVPlayerCSg_tcfC', 
+                       '_$s14_AVKit_SwiftUI11VideoPlayerVMa', '_$s14_AVKit_SwiftUI11VideoPlayerVMn', 
+                       '_$s14_AVKit_SwiftUI11VideoPlayerVyxG0bC04ViewAAMc', '_$s7SwiftUI4ViewP07_AVKit_aB0E22continuityDevicePicker11isPresented12onDidConnectQrAA7BindingVySbG_ySo012AVContinuityF0CSgcSgtF', 
+                       '_$s7SwiftUI4ViewP07_AVKit_aB0E22continuityDevicePicker11isPresented12onDidConnectQrAA7BindingVySbG_ySo012AVContinuityF0CSgcSgtFQOMQ' ]
+...

@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ arm64-tvos, arm64e-tvos ]
+install-name:    '/System/Library/Frameworks/TVUIKit.framework/TVUIKit'
+exports:
+  - targets:         [ arm64-tvos, arm64e-tvos ]
+    objc-classes:    [ TVCaptionButtonView, TVCardView, TVCollectionViewFullScreenCell, 
+                       TVCollectionViewFullScreenLayout, TVCollectionViewFullScreenLayoutAttributes, 
+                       TVDigitEntryViewController, TVLockupHeaderFooterView, TVLockupView, 
+                       TVMediaItemContentBadgeProperties, TVMediaItemContentConfiguration, 
+                       TVMediaItemContentTextProperties, TVMediaItemContentView, 
+                       TVMonogramContentConfiguration, TVMonogramContentTextProperties, 
+                       TVMonogramContentView, TVMonogramView, TVPosterView, _TVCarouselView, 
+                       _TVContentRating, _TVContentRatingBadgeManager, _TVContentRatingSystemUtilities, 
+                       _TVContentRatingTextBadgeView, _TVFocusableTextView, _TVFullScreenBrowserTransitionLayoutAttributes, 
+                       _TVFullScreenBrowserView, _TVFullScreenBrowserViewCell, _TVRibbonCell, 
+                       _TVRibbonCellMaskingParameters, _TVRibbonView, _TVStackedMediaDocument, 
+                       _TVStackedMediaView, _TVStackedVideoPlayerView ]
+...

@@ -1,0 +1,14 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ arm64-tvos, arm64e-tvos ]
+install-name:    '/System/Library/Frameworks/SharedWithYou.framework/SharedWithYou'
+swift-abi-version: 7
+reexported-libraries:
+  - targets:         [ arm64-tvos, arm64e-tvos ]
+    libraries:       [ '/System/Library/Frameworks/SharedWithYouCore.framework/SharedWithYouCore' ]
+exports:
+  - targets:         [ arm64-tvos, arm64e-tvos ]
+    symbols:         [ _SWHighlightErrorDomain ]
+    objc-classes:    [ SWAttributionView, SWCoreSpotlightUtilities, SWHighlight, 
+                       SWHighlightCenter, SWHighlightContextMenu ]
+...

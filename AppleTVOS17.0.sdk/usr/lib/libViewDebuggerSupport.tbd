@@ -1,0 +1,8 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ arm64-tvos, arm64e-tvos ]
+install-name:    '/usr/lib/libViewDebuggerSupport.dylib'
+exports:
+  - targets:         [ arm64-tvos, arm64e-tvos ]
+    symbols:         [ _libViewDebuggerSupportVersionNumber, _libViewDebuggerSupportVersionString ]
+...

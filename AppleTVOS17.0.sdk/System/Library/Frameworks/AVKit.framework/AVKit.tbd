@@ -1,0 +1,35 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ arm64-tvos, arm64e-tvos ]
+install-name:    '/System/Library/Frameworks/AVKit.framework/AVKit'
+exports:
+  - targets:         [ arm64-tvos, arm64e-tvos ]
+    symbols:         [ _AVDisplayManagerConsiderDisplayModeSwitchFinished, _AVDisplayManagerModeSwitchEndNotification, 
+                       _AVDisplayManagerModeSwitchSettingsChangedNotification, _AVDisplayManagerModeSwitchStartNotification, 
+                       _AVInfoViewsVisualEffectGroup, _AVKitErrorDomain, _AVKitMetadataIdentifierAlternateSubTitle, 
+                       _AVKitMetadataIdentifierApproximateEndDate, _AVKitMetadataIdentifierApproximateStartDate, 
+                       _AVKitMetadataIdentifierBrandIdentifier, _AVKitMetadataIdentifierEpisodeNumber, 
+                       _AVKitMetadataIdentifierExactEndDate, _AVKitMetadataIdentifierExactStartDate, 
+                       _AVKitMetadataIdentifierExternalContentIdentifier, _AVKitMetadataIdentifierExternalUserProfileIdentifier, 
+                       _AVKitMetadataIdentifierLeagueName, _AVKitMetadataIdentifierPlaybackProgress, 
+                       _AVKitMetadataIdentifierProgramScheduledTime, _AVKitMetadataIdentifierReleaseDate, 
+                       _AVKitMetadataIdentifierRottenTomatoesFreshness, _AVKitMetadataIdentifierRottenTomatoesRating, 
+                       _AVKitMetadataIdentifierSeasonNumber, _AVKitMetadataIdentifierServiceIdentifier, 
+                       _AVKitMetadataIdentifierTotalTrackCount, _AVKitMetadataIdentifieriTunesStoreIdentifier, 
+                       _AVNavigationMarkersGroupNoImagesLeftToLoadNotification, _AVNowPlayingInfoMetadataIdentifierExternalContentIdentifier, 
+                       _AVPictureInPictureControllerContentSourceKey, _AVPictureInPictureControllerDidStartNotification, 
+                       _AVPictureInPictureControllerDidStopNotification, _AVPictureInPictureControllerPlaybackStateDidChangeNotification, 
+                       _AVPictureInPictureControllerPlaybackStateIsPlayingKey, _AVPictureInPictureControllerWillStartNotification, 
+                       _AVPictureInPictureControllerWillStopNotification, _AVPlayerViewControllerDidShowInfoViewControllerKindKey, 
+                       _AVPlayerViewControllerDidShowInfoViewControllerNotification, 
+                       _AVPlayerViewControllerInfoViewControllerAudioKind, _AVPlayerViewControllerInfoViewControllerCustomKind, 
+                       _AVPlayerViewControllerInfoViewControllerInfoKind, _AVPlayerViewControllerInfoViewControllerNavigationMarkersKind, 
+                       _AVPlayerViewControllerInfoViewControllerSubtitlesKind, _AVPlayerViewControllerVideoPresentationDidBecomeNowPlayingNotification, 
+                       _AVPlayerViewControllerVideoPresentationDidResignNowPlayingNotification ]
+    objc-classes:    [ AVContentProposal, AVContentProposalViewController, AVContinuityDevicePickerViewController, 
+                       AVDisplayManager, AVInterstitialTimeRange, AVMusicAppBehavior, 
+                       AVMusicAppBehaviorContext, AVNavigationMarkersGroup, AVPictureInPictureContentViewController, 
+                       AVPictureInPictureController, AVPictureInPictureControllerContentSource, 
+                       AVPictureInPictureVideoCallViewController, AVPlaybackSpeed, 
+                       AVPlayerViewController, AVRoutePickerView, AVTransportBarViewController ]
+...

@@ -1,0 +1,69 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.111.22 clang-1500.0.21.3)
+// swift-module-flags: -target arm64-apple-tvos17.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -library-level api -module-name DeviceDiscoveryUI
+// swift-module-flags-ignorable: -enable-bare-slash-regex -user-module-version 1925.10.3.2
+@_exported import DeviceDiscoveryUI
+import Foundation
+import Network
+import Swift
+import SwiftUI
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os
+extension Network.NWEndpoint : @unchecked Swift.Sendable {
+}
+@available(tvOS 16.0, *)
+@available(iOS, unavailable)
+@available(macOS, unavailable)
+@available(watchOS, unavailable)
+extension DeviceDiscoveryUI.DDDevicePickerViewController : Swift.Sendable {
+}
+extension DeviceDiscoveryUI.DDDevicePickerViewController {
+  @available(tvOS 16.0, *)
+  @available(iOS, unavailable)
+  @available(macOS, unavailable)
+  @available(watchOS, unavailable)
+  @_Concurrency.MainActor(unsafe) public static func isSupported(_ browseDescriptor: Network.NWBrowser.Descriptor, using: Network.NWParameters? = nil) -> Swift.Bool
+  @available(tvOS 16.0, *)
+  @available(iOS, unavailable)
+  @available(macOS, unavailable)
+  @available(watchOS, unavailable)
+  @_Concurrency.MainActor(unsafe) convenience public init?(browseDescriptor: Network.NWBrowser.Descriptor, parameters: Network.NWParameters? = nil)
+  #if compiler(>=5.3) && $EffectfulProp
+  @available(tvOS 16.0, *)
+  @available(iOS, unavailable)
+  @available(macOS, unavailable)
+  @available(watchOS, unavailable)
+  @_Concurrency.MainActor(unsafe) public var endpoint: Network.NWEndpoint {
+    get async throws
+  }
+  #endif
+}
+@available(tvOS 16.0, *)
+@available(iOS, unavailable)
+@available(macOS, unavailable)
+@available(watchOS, unavailable)
+public struct DevicePicker<Label, Fallback> : SwiftUI.View where Label : SwiftUI.View, Fallback : SwiftUI.View {
+  public init(_ browseDescriptor: Network.NWBrowser.Descriptor, onSelect: @escaping (Network.NWEndpoint) -> Swift.Void, @SwiftUI.ViewBuilder label: () -> Label, @SwiftUI.ViewBuilder fallback: () -> Fallback, parameters: (() -> Network.NWParameters)? = nil)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s17DeviceDiscoveryUI0A6PickerV4bodyQrvp", 0) __<Label, Fallback>
+}
+@available(tvOS 16.0, *)
+@available(iOS, unavailable)
+@available(macOS, unavailable)
+@available(watchOS, unavailable)
+public struct DevicePickerSupportedAction {
+  public func callAsFunction(_ browseDescriptor: Network.NWBrowser.Descriptor, parameters: (() -> Network.NWParameters)? = nil) -> Swift.Bool
+}
+extension SwiftUI.EnvironmentValues {
+  @available(tvOS 16.0, *)
+  @available(iOS, unavailable)
+  @available(macOS, unavailable)
+  @available(watchOS, unavailable)
+  public var devicePickerSupports: DeviceDiscoveryUI.DevicePickerSupportedAction {
+    get
+  }
+}

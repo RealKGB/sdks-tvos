@@ -1,0 +1,261 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.111.22 clang-1500.0.21.3)
+// swift-module-flags: -target arm64e-apple-tvos17.0 -enable-objc-interop -autolink-force-load -enable-library-evolution -module-link-name swiftTVUIKit -swift-version 5 -enforce-exclusivity=checked -O -library-level api -module-name TVUIKit
+// swift-module-flags-ignorable: -enable-bare-slash-regex -user-module-version 161
+import Foundation
+import Swift
+@_exported import TVUIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@available(tvOS 15.0, *)
+extension TVUIKit.TVMonogramContentView : UIKit.UIContentView {
+  @available(tvOS 15.0, *)
+  @_Concurrency.MainActor public var configuration: any UIKit.UIContentConfiguration {
+    get
+    set(config)
+  }
+  @available(tvOS 15.0, *)
+  @_Concurrency.MainActor(unsafe) convenience public init(configuration: TVUIKit.TVMonogramContentConfiguration)
+}
+@available(tvOS 15.0, *)
+public struct TVMonogramContentConfiguration : UIKit.UIContentConfiguration, Swift.Hashable {
+  public struct TextProperties : Swift.Hashable {
+    public enum TextTransform {
+      case none
+      case lowercase
+      case uppercase
+      case capitalized
+      public static func == (a: TVUIKit.TVMonogramContentConfiguration.TextProperties.TextTransform, b: TVUIKit.TVMonogramContentConfiguration.TextProperties.TextTransform) -> Swift.Bool
+      public func hash(into hasher: inout Swift.Hasher)
+      public var hashValue: Swift.Int {
+        get
+      }
+    }
+    public var font: UIKit.UIFont {
+      get
+      set(font)
+    }
+    public var color: UIKit.UIColor {
+      get
+      set(color)
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: TVUIKit.TVMonogramContentConfiguration.TextProperties, b: TVUIKit.TVMonogramContentConfiguration.TextProperties) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public static func cell() -> TVUIKit.TVMonogramContentConfiguration
+  @_Concurrency.MainActor public func makeContentView() -> any UIKit.UIView & UIKit.UIContentView
+  public func updated(for state: any UIKit.UIConfigurationState) -> TVUIKit.TVMonogramContentConfiguration
+  public var image: UIKit.UIImage? {
+    get
+    set(image)
+  }
+  public var text: Swift.String? {
+    get
+    set(text)
+  }
+  public var textProperties: TVUIKit.TVMonogramContentConfiguration.TextProperties {
+    get
+    set(textProperties)
+  }
+  public var secondaryText: Swift.String? {
+    get
+    set(secondaryText)
+  }
+  public var secondaryTextProperties: TVUIKit.TVMonogramContentConfiguration.TextProperties {
+    get
+    set(secondaryTextProperties)
+  }
+  public var personNameComponents: Foundation.PersonNameComponents? {
+    get
+    set(newValue)
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: TVUIKit.TVMonogramContentConfiguration, b: TVUIKit.TVMonogramContentConfiguration) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@available(tvOS 15.0, *)
+extension TVUIKit.TVMonogramContentConfiguration.TextProperties : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible, Swift.CustomReflectable {
+  public var description: Swift.String {
+    get
+  }
+  public var debugDescription: Swift.String {
+    get
+  }
+  public var customMirror: Swift.Mirror {
+    get
+  }
+}
+@available(tvOS 15.0, *)
+extension TVUIKit.TVMonogramContentConfiguration : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible, Swift.CustomReflectable {
+  public var description: Swift.String {
+    get
+  }
+  public var debugDescription: Swift.String {
+    get
+  }
+  public var customMirror: Swift.Mirror {
+    get
+  }
+}
+@available(tvOS 15.0, *)
+extension TVUIKit.TVMediaItemContentView : UIKit.UIContentView {
+  @available(tvOS 15.0, *)
+  @_Concurrency.MainActor public var configuration: any UIKit.UIContentConfiguration {
+    get
+    set(config)
+  }
+  @available(tvOS 15.0, *)
+  @_Concurrency.MainActor(unsafe) convenience public init(configuration: TVUIKit.TVMediaItemContentConfiguration)
+}
+@available(tvOS 15.0, *)
+public struct TVMediaItemContentConfiguration : UIKit.UIContentConfiguration, Swift.Hashable {
+  public struct TextProperties : Swift.Hashable {
+    public enum TextTransform {
+      case none
+      case lowercase
+      case uppercase
+      case capitalized
+      public static func == (a: TVUIKit.TVMediaItemContentConfiguration.TextProperties.TextTransform, b: TVUIKit.TVMediaItemContentConfiguration.TextProperties.TextTransform) -> Swift.Bool
+      public func hash(into hasher: inout Swift.Hasher)
+      public var hashValue: Swift.Int {
+        get
+      }
+    }
+    public var font: UIKit.UIFont {
+      get
+      set(font)
+    }
+    public var color: UIKit.UIColor {
+      get
+      set(color)
+    }
+    public var transform: TVUIKit.TVMediaItemContentConfiguration.TextProperties.TextTransform {
+      get
+      set(transform)
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: TVUIKit.TVMediaItemContentConfiguration.TextProperties, b: TVUIKit.TVMediaItemContentConfiguration.TextProperties) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public struct BadgeProperties : Swift.Hashable {
+    public static func `default`() -> TVUIKit.TVMediaItemContentConfiguration.BadgeProperties
+    public static func liveContent() -> TVUIKit.TVMediaItemContentConfiguration.BadgeProperties
+    public var backgroundColor: UIKit.UIColor {
+      get
+      set(backgroundColor)
+    }
+    public var font: UIKit.UIFont {
+      get
+      set(font)
+    }
+    public var color: UIKit.UIColor {
+      get
+      set(color)
+    }
+    public var transform: TVUIKit.TVMediaItemContentConfiguration.TextProperties.TextTransform {
+      get
+      set(transform)
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: TVUIKit.TVMediaItemContentConfiguration.BadgeProperties, b: TVUIKit.TVMediaItemContentConfiguration.BadgeProperties) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public static func wideCell() -> TVUIKit.TVMediaItemContentConfiguration
+  @_Concurrency.MainActor public func makeContentView() -> any UIKit.UIView & UIKit.UIContentView
+  public func updated(for state: any UIKit.UIConfigurationState) -> TVUIKit.TVMediaItemContentConfiguration
+  public var image: UIKit.UIImage? {
+    get
+    set(image)
+  }
+  public var text: Swift.String? {
+    get
+    set(text)
+  }
+  public var textProperties: TVUIKit.TVMediaItemContentConfiguration.TextProperties {
+    get
+    set(textProperties)
+  }
+  public var secondaryText: Swift.String? {
+    get
+    set(secondaryText)
+  }
+  public var secondaryTextProperties: TVUIKit.TVMediaItemContentConfiguration.TextProperties {
+    get
+    set(secondaryTextProperties)
+  }
+  public var playbackProgress: Swift.Float {
+    get
+    set(playbackProgress)
+  }
+  public var badgeText: Swift.String? {
+    get
+    set(badgeText)
+  }
+  public var badgeProperties: TVUIKit.TVMediaItemContentConfiguration.BadgeProperties {
+    get
+    set(badgeProperties)
+  }
+  public var overlayView: UIKit.UIView? {
+    get
+    set(overlayView)
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: TVUIKit.TVMediaItemContentConfiguration, b: TVUIKit.TVMediaItemContentConfiguration) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@available(tvOS 15.0, *)
+extension TVUIKit.TVMediaItemContentConfiguration.TextProperties : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible, Swift.CustomReflectable {
+  public var description: Swift.String {
+    get
+  }
+  public var debugDescription: Swift.String {
+    get
+  }
+  public var customMirror: Swift.Mirror {
+    get
+  }
+}
+@available(tvOS 15.0, *)
+extension TVUIKit.TVMediaItemContentConfiguration.BadgeProperties : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible, Swift.CustomReflectable {
+  public var description: Swift.String {
+    get
+  }
+  public var debugDescription: Swift.String {
+    get
+  }
+  public var customMirror: Swift.Mirror {
+    get
+  }
+}
+@available(tvOS 15.0, *)
+extension TVUIKit.TVMediaItemContentConfiguration : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible, Swift.CustomReflectable {
+  public var description: Swift.String {
+    get
+  }
+  public var debugDescription: Swift.String {
+    get
+  }
+  public var customMirror: Swift.Mirror {
+    get
+  }
+}
+@available(tvOS 15.0, *)
+extension TVUIKit.TVMonogramContentConfiguration.TextProperties.TextTransform : Swift.Equatable {}
+@available(tvOS 15.0, *)
+extension TVUIKit.TVMonogramContentConfiguration.TextProperties.TextTransform : Swift.Hashable {}
+@available(tvOS 15.0, *)
+extension TVUIKit.TVMediaItemContentConfiguration.TextProperties.TextTransform : Swift.Equatable {}
+@available(tvOS 15.0, *)
+extension TVUIKit.TVMediaItemContentConfiguration.TextProperties.TextTransform : Swift.Hashable {}

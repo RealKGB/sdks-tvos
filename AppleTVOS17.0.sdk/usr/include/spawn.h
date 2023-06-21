@@ -61,52 +61,52 @@ int     posix_spawn(pid_t * __restrict, const char * __restrict,
     const posix_spawn_file_actions_t *,
     const posix_spawnattr_t * __restrict,
     char *const __argv[__restrict],
-    char *const __envp[__restrict]) __API_AVAILABLE(macos(10.5), ios(2.0)) __API_UNAVAILABLE(watchos, tvos);
+    char *const __envp[__restrict]) __API_AVAILABLE(macos(10.5), ios(2.0), tvos(9.0), watchos(2.0));
 
 int     posix_spawnp(pid_t * __restrict, const char * __restrict,
     const posix_spawn_file_actions_t *,
     const posix_spawnattr_t * __restrict,
     char *const __argv[__restrict],
-    char *const __envp[__restrict]) __API_AVAILABLE(macos(10.5), ios(2.0));
+    char *const __envp[__restrict]) __API_AVAILABLE(macos(10.5), ios(2.0), tvos(9.0), watchos(2.0));
 
-int     posix_spawn_file_actions_addclose(posix_spawn_file_actions_t *, int) __API_AVAILABLE(macos(10.5), ios(2.0)) __API_UNAVAILABLE(watchos, tvos);
+int     posix_spawn_file_actions_addclose(posix_spawn_file_actions_t *, int) __API_AVAILABLE(macos(10.5), ios(2.0), tvos(9.0), watchos(2.0));
 
 int     posix_spawn_file_actions_adddup2(posix_spawn_file_actions_t *, int,
-    int) __API_AVAILABLE(macos(10.5), ios(2.0)) __API_UNAVAILABLE(watchos, tvos);
+    int) __API_AVAILABLE(macos(10.5), ios(2.0), tvos(9.0), watchos(2.0));
 
 int     posix_spawn_file_actions_addopen(
 	posix_spawn_file_actions_t * __restrict, int,
-	const char * __restrict, int, mode_t) __API_AVAILABLE(macos(10.5), ios(2.0)) __API_UNAVAILABLE(watchos, tvos);
+	const char * __restrict, int, mode_t) __API_AVAILABLE(macos(10.5), ios(2.0), tvos(9.0), watchos(2.0));
 
-int     posix_spawn_file_actions_destroy(posix_spawn_file_actions_t *) __API_AVAILABLE(macos(10.5), ios(2.0)) __API_UNAVAILABLE(watchos, tvos);
+int     posix_spawn_file_actions_destroy(posix_spawn_file_actions_t *) __API_AVAILABLE(macos(10.5), ios(2.0), tvos(9.0), watchos(2.0));
 
-int     posix_spawn_file_actions_init(posix_spawn_file_actions_t *) __API_AVAILABLE(macos(10.5), ios(2.0)) __API_UNAVAILABLE(watchos, tvos);
+int     posix_spawn_file_actions_init(posix_spawn_file_actions_t *) __API_AVAILABLE(macos(10.5), ios(2.0), tvos(9.0), watchos(2.0));
 
-int     posix_spawnattr_destroy(posix_spawnattr_t *) __API_AVAILABLE(macos(10.5), ios(2.0)) __API_UNAVAILABLE(watchos, tvos);
+int     posix_spawnattr_destroy(posix_spawnattr_t *) __API_AVAILABLE(macos(10.5), ios(2.0), tvos(9.0), watchos(2.0));
 
 int     posix_spawnattr_getsigdefault(const posix_spawnattr_t * __restrict,
-    sigset_t * __restrict) __API_AVAILABLE(macos(10.5), ios(2.0)) __API_UNAVAILABLE(watchos, tvos);
+    sigset_t * __restrict) __API_AVAILABLE(macos(10.5), ios(2.0), tvos(9.0), watchos(2.0));
 
 int     posix_spawnattr_getflags(const posix_spawnattr_t * __restrict,
-    short * __restrict) __API_AVAILABLE(macos(10.5), ios(2.0)) __API_UNAVAILABLE(watchos, tvos);
+    short * __restrict) __API_AVAILABLE(macos(10.5), ios(2.0), tvos(9.0), watchos(2.0));
 
 int     posix_spawnattr_getpgroup(const posix_spawnattr_t * __restrict,
-    pid_t * __restrict) __API_AVAILABLE(macos(10.5), ios(2.0)) __API_UNAVAILABLE(watchos, tvos);
+    pid_t * __restrict) __API_AVAILABLE(macos(10.5), ios(2.0), tvos(9.0), watchos(2.0));
 
 int     posix_spawnattr_getsigmask(const posix_spawnattr_t * __restrict,
-    sigset_t * __restrict) __API_AVAILABLE(macos(10.5), ios(2.0)) __API_UNAVAILABLE(watchos, tvos);
+    sigset_t * __restrict) __API_AVAILABLE(macos(10.5), ios(2.0), tvos(9.0), watchos(2.0));
 
-int     posix_spawnattr_init(posix_spawnattr_t *) __API_AVAILABLE(macos(10.5), ios(2.0)) __API_UNAVAILABLE(watchos, tvos);
+int     posix_spawnattr_init(posix_spawnattr_t *) __API_AVAILABLE(macos(10.5), ios(2.0), tvos(9.0), watchos(2.0));
 
 int     posix_spawnattr_setsigdefault(posix_spawnattr_t * __restrict,
-    const sigset_t * __restrict) __API_AVAILABLE(macos(10.5), ios(2.0)) __API_UNAVAILABLE(watchos, tvos);
+    const sigset_t * __restrict) __API_AVAILABLE(macos(10.5), ios(2.0), tvos(9.0), watchos(2.0));
 
-int     posix_spawnattr_setflags(posix_spawnattr_t *, short) __API_AVAILABLE(macos(10.5), ios(2.0)) __API_UNAVAILABLE(watchos, tvos);
+int     posix_spawnattr_setflags(posix_spawnattr_t *, short) __API_AVAILABLE(macos(10.5), ios(2.0), tvos(9.0), watchos(2.0));
 
-int     posix_spawnattr_setpgroup(posix_spawnattr_t *, pid_t) __API_AVAILABLE(macos(10.5), ios(2.0)) __API_UNAVAILABLE(watchos, tvos);
+int     posix_spawnattr_setpgroup(posix_spawnattr_t *, pid_t) __API_AVAILABLE(macos(10.5), ios(2.0), tvos(9.0), watchos(2.0));
 
 int     posix_spawnattr_setsigmask(posix_spawnattr_t * __restrict,
-    const sigset_t * __restrict) __API_AVAILABLE(macos(10.5), ios(2.0)) __API_UNAVAILABLE(watchos, tvos);
+    const sigset_t * __restrict) __API_AVAILABLE(macos(10.5), ios(2.0), tvos(9.0), watchos(2.0));
 
 #if 0   /* _POSIX_PRIORITY_SCHEDULING [PS] : not supported */
 int     posix_spawnattr_setschedparam(posix_spawnattr_t * __restrict,
@@ -133,34 +133,34 @@ __END_DECLS
 __BEGIN_DECLS
 
 int     posix_spawnattr_getbinpref_np(const posix_spawnattr_t * __restrict,
-    size_t, cpu_type_t *__restrict, size_t *__restrict) __API_AVAILABLE(macos(10.5), ios(2.0)) __API_UNAVAILABLE(watchos, tvos);
+    size_t, cpu_type_t *__restrict, size_t *__restrict) __API_AVAILABLE(macos(10.5), ios(2.0), tvos(9.0), watchos(2.0));
 
 int     posix_spawnattr_getarchpref_np(const posix_spawnattr_t * __restrict,
-    size_t, cpu_type_t *__restrict, cpu_subtype_t *__restrict, size_t *__restrict) __API_AVAILABLE(macos(11.0), ios(14.0)) __API_UNAVAILABLE(watchos, tvos);
+    size_t, cpu_type_t *__restrict, cpu_subtype_t *__restrict, size_t *__restrict) __API_AVAILABLE(macos(11.0), ios(14.0), tvos(14.0), watchos(7.0));
 
 int     posix_spawnattr_setauditsessionport_np(posix_spawnattr_t * __restrict,
-    mach_port_t) __API_AVAILABLE(macos(10.6), ios(3.2));
+    mach_port_t) __API_AVAILABLE(macos(10.6), ios(3.2), tvos(9.0), watchos(2.0));
 
 int     posix_spawnattr_setbinpref_np(posix_spawnattr_t * __restrict,
-    size_t, cpu_type_t *__restrict, size_t *__restrict) __API_AVAILABLE(macos(10.5), ios(2.0)) __API_UNAVAILABLE(watchos, tvos);
+    size_t, cpu_type_t *__restrict, size_t *__restrict) __API_AVAILABLE(macos(10.5), ios(2.0), tvos(9.0), watchos(2.0));
 
 int     posix_spawnattr_setarchpref_np(posix_spawnattr_t * __restrict,
-    size_t, cpu_type_t *__restrict, cpu_subtype_t *__restrict, size_t *__restrict) __API_AVAILABLE(macos(11.0), ios(14.0)) __API_UNAVAILABLE(watchos, tvos);
+    size_t, cpu_type_t *__restrict, cpu_subtype_t *__restrict, size_t *__restrict) __API_AVAILABLE(macos(11.0), ios(14.0), tvos(14.0), watchos(7.0));
 
 int     posix_spawnattr_setexceptionports_np(posix_spawnattr_t * __restrict,
     exception_mask_t, mach_port_t,
-    exception_behavior_t, thread_state_flavor_t) __API_AVAILABLE(macos(10.5), ios(2.0)) __API_UNAVAILABLE(watchos, tvos);
+    exception_behavior_t, thread_state_flavor_t) __API_AVAILABLE(macos(10.5), ios(2.0), tvos(9.0), watchos(2.0));
 
 int     posix_spawnattr_setspecialport_np(posix_spawnattr_t * __restrict,
-    mach_port_t, int) __API_AVAILABLE(macos(10.5), ios(2.0)) __API_UNAVAILABLE(watchos, tvos);
+    mach_port_t, int) __API_AVAILABLE(macos(10.5), ios(2.0), tvos(9.0), watchos(2.0));
 
-int     posix_spawnattr_setnosmt_np(const posix_spawnattr_t * __restrict attr) __API_AVAILABLE(macos(11.0));
+int     posix_spawnattr_setnosmt_np(const posix_spawnattr_t * __restrict attr) __API_AVAILABLE(macos(11.0), ios(14.0), tvos(14.0), watchos(7.0));
 
 /*
  * Set CPU Security Mitigation on the spawned process
  * This attribute affects all threads and is inherited on fork and exec
  */
-int     posix_spawnattr_set_csm_np(const posix_spawnattr_t * __restrict attr, uint32_t flags) __API_AVAILABLE(macos(11.0));
+int     posix_spawnattr_set_csm_np(const posix_spawnattr_t * __restrict attr, uint32_t flags) __API_AVAILABLE(macos(11.0), ios(14.0), tvos(14.0), watchos(7.0));
 /*
  * flags for CPU Security Mitigation attribute
  * POSIX_SPAWN_NP_CSM_ALL should be used in most cases,
@@ -171,13 +171,13 @@ int     posix_spawnattr_set_csm_np(const posix_spawnattr_t * __restrict attr, ui
 #define POSIX_SPAWN_NP_CSM_TECS        0x0004
 
 int     posix_spawn_file_actions_addinherit_np(posix_spawn_file_actions_t *,
-    int) __API_AVAILABLE(macos(10.7), ios(4.3)) __API_UNAVAILABLE(watchos, tvos);
+    int) __API_AVAILABLE(macos(10.7), ios(4.3), tvos(9.0), watchos(2.0));
 
 int     posix_spawn_file_actions_addchdir_np(posix_spawn_file_actions_t *,
-    const char * __restrict) __API_AVAILABLE(macos(10.15)) __API_UNAVAILABLE(ios, tvos, watchos);
+    const char * __restrict) __API_AVAILABLE(macos(10.15), ios(13.0), tvos(13.0), watchos(6.0));
 
 int     posix_spawn_file_actions_addfchdir_np(posix_spawn_file_actions_t *,
-    int) __API_AVAILABLE(macos(10.15)) __API_UNAVAILABLE(ios, tvos, watchos);
+    int) __API_AVAILABLE(macos(10.15), ios(13.0), tvos(13.0), watchos(6.0));
 
 __END_DECLS
 
